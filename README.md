@@ -62,7 +62,7 @@ If you want to use this library without DMA you must follow steps as below:
 #define OLED_DRIVER_SYMBOL SH1106
 ```
 	
-..* Include all needed files in your main.c file:
+* Include all needed files in your main.c file:
 
 ```c
 #include "../SPI/spi.h"
