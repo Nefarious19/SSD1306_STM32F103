@@ -10,10 +10,12 @@ FOLDER: 	FILES
 ----------------------------------------------------------------------------
 GPIO  		pins.h - contains #defines with pin numbers (PA0 - 0, PA1 - 1 etc).
        		gpio.h - header file with listed API for controling GPIOs
-        	gpio.c - source file that contains functions that can be used to 										 control GPIOS
+        	gpio.c - source file that contains functions that can be used to control GPIOS
 ----------------------------------------------------------------------------        	
-SPI		spi.h  - header file with listed very simple API for controling 										 SPI1(only transmission in master mode)
-		spi.c  - source file that contains functions for SPI1 interface 						 				 (transmission only (one data pin) in master mode.
+SPI		spi.h  - header file with listed very simple API for controling 
+			SPI1(only transmission in master mode)
+		spi.c  - source file that contains functions for SPI1 interface
+			(transmission only (one data pin) in master mode.
 ----------------------------------------------------------------------------
 SPI1_DMA	spi1_dma.c - file contains code for using DMA1 channel 3 for SPI 										     transimsion
 		spi1_dma.h - listed API for DMA1 Ch3 SPI transmision mode.
