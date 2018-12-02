@@ -7,11 +7,15 @@
 ### 2. FIle structure description
 
 FOLDER: 	|FILES	|Description
-----------------|-------|----------------------------------------------------------
+----------------|-------|--------------------------------------------------------------------
 GPIO  		|pins.h	|contains #defines with pin numbers (PA0 - 0, PA1 - 1 etc).
+		|-------|---------------------------------------------------------------------
        		|gpio.h |header file with listed API for controling GPIOs
+		|-------|---------------------------------------------------------------------
         	|gpio.c |source file that contains functions that can be used to control GPIOS
 ----------------|-------|----------------------------------------------------------    	
+
+
 SPI		spi.h  - header file with listed very simple API for controling 
 			SPI1(only transmission in master mode)
 		spi.c  - source file that contains functions for SPI1 interface 						 				(transmission only (one data pin) in master mode.
