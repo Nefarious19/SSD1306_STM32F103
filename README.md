@@ -5,13 +5,13 @@
 ### 1.Library for 1.3" SSD1306 OLED display. Developed on STM32F103C8T6 microcontroller. It can be easily ported on any other type of microcontroller. 
 
 ### 2. FIle structure description
-```
+
 FOLDER: 	|FILES	|Description
 ----------------|-------|----------------------------------------------------------
 GPIO  		|pins.h	|contains #defines with pin numbers (PA0 - 0, PA1 - 1 etc).
-       		|gpio.h - header file with listed API for controling GPIOs
-        	gpio.c - source file that contains functions that can be used to 							control GPIOS
-----------------------------------------------------------------------------        	
+       		|gpio.h |header file with listed API for controling GPIOs
+        	|gpio.c |source file that contains functions that can be used to control GPIOS
+----------------|-------|----------------------------------------------------------    	
 SPI		spi.h  - header file with listed very simple API for controling 
 			SPI1(only transmission in master mode)
 		spi.c  - source file that contains functions for SPI1 interface 						 				(transmission only (one data pin) in master mode.
@@ -33,7 +33,7 @@ OLED
 |--src		ssd1306.c	 		- basic API for OLED menagment
 		ssd1306_gfx.c	- file contains API for drawing grpahics		
 		ssd1306_print.c - file contains API for printing 
-```
+		
 ### 3. How to use this library
 
 As It was written, this library was developed on STM32F103C8T6 uC. Hardware configuration was as below:
