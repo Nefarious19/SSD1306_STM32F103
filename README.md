@@ -12,13 +12,14 @@ GPIO  		pins.h - contains #defines with pin numbers (PA0 - 0, PA1 - 1 etc).
        		gpio.h - header file with listed API for controling GPIOs
         	gpio.c - source file that contains functions that can be used to 							control GPIOS
 ----------------------------------------------------------------------------        	
-SPI			spi.h  - header file with listed very simple API for controling 							SPI1(only transmission in master mode)
-			spi.c  - source file that contains functions for SPI1 interface 						 							(transmission only (one data pin) in master mode.
+SPI		spi.h  - header file with listed very simple API for controling 
+			SPI1(only transmission in master mode)
+		spi.c  - source file that contains functions for SPI1 interface 						 				(transmission only (one data pin) in master mode.
 ----------------------------------------------------------------------------
-SPI1_DMA	spi1_dma.c - file contains code for using DMA1 channel 3 for SPI 								transimsion
-			spi1_dma.h - listed API for DMA1 Ch3 SPI transmision mode.
+SPI1_DMA	spi1_dma.c - file contains code for using DMA1 channel 3 for SPI 										     transimsion
+		spi1_dma.h - listed API for DMA1 Ch3 SPI transmision mode.
 ----------------------------------------------------------------------------			
-src			main.c - example of how to use OLED api
+src		main.c - example of how to use OLED api
 ----------------------------------------------------------------------------
 OLED		
 |--icons icons.h - this file contains few 8x8pixels icons for OLED display	
@@ -30,8 +31,8 @@ OLED
 |			ssd1306.h	 - basic API for OLED menagment
 |
 |--src		ssd1306.c	 		- basic API for OLED menagment
-			ssd1306_gfx.c	- file contains API for drawing grpahics		
-			ssd1306_print.c - file contains API for printing 
+		ssd1306_gfx.c	- file contains API for drawing grpahics		
+		ssd1306_print.c - file contains API for printing 
 ```
 ### 3. How to use this library
 
