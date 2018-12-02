@@ -4,6 +4,8 @@
 
 ### 1.Library for 1.3" SSD1306 OLED display. Developed on STM32F103C8T6 microcontroller. It can be easily ported on any other type of microcontroller. 
 
+![Alt text](OLED/oled.jpg?raw=true "OLED")
+
 ### 2. FIle structure description
 
 #### 2.1. GPIO
