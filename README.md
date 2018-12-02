@@ -8,10 +8,10 @@
 
 FOLDER: 	|FILES	|Description
 ----------------|-------|--------------------------------------------------------------------
-GPIO  		| pins.h	|contains #defines with pin numbers (PA0 - 0, PA1 - 1 etc).
-       		| gpio.h 	|header file with listed API for controling GPIOs
-        	| gpio.c 	|source file that contains functions that can be used to control GPIOS
- 	
+GPIO  		| pins.h | contains #defines with pin numbers (PA0 - 0, PA1 - 1 etc).
+       	        | gpio.h | header file with listed API for controling GPIOs
+                | gpio.c | source file that contains functions that can be used to control GPIOS
+----------------|-------|-------------------------------------------------------------------- 	
 
 
 SPI		spi.h  - header file with listed very simple API for controling 
