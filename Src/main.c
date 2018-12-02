@@ -56,17 +56,7 @@ int main(void)
   {
 	  if(!timer)
 	  {
-		  static uint8_t state = 0;
-		  state ^= 1;
 		  timer = 100;
-		  if(state)
-		  {
-			  GPIO_setHigh(GPIOB,PB12);
-		  }
-		  else
-		  {
-			  GPIO_setLow(GPIOB,PB12);
-		  }
 		  SSD_DMA_trigger();
 	  }
   }

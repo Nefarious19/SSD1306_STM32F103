@@ -94,26 +94,22 @@ int main(void)
 ```c
 int main(void)
 {	
-	SPI_Init();
-	SSD_init();
-	
-	SSD_GFX_loadSmallBitmap(ant_8x8,8,8,0,0);
-  	SSD_GFX_loadSmallBitmap(sig_strenght_lvl4_8x8,8,8,8,0);
-  	SSD_GFX_loadSmallBitmap(bat_lvl3_8x8,8,8,20,0);
-  	SSD_GFX_loadSmallBitmap(wifi_lvl_3_8x8,8,8,32,0);
-  	SSD_GFX_loadSmallBitmap(message_8x8,8,8,44,0);
-  	SSD_GFX_loadSmallBitmap(arrow_right_8x8,8,8,56,0);
-  	SSD_GFX_loadSmallBitmap(bluetooth_8x8,8,8,68,0);
-  	SSD_GFX_loadSmallBitmap(settings_8x8,8,8,80,0);
-	
-	while(1)
-	{
-		//some stuff
-		if(timer100ms_flag == 1)
-		{
-			void SSD_updateBuffer(SSD_GFX_returnBufferPointer());
-		}
-	}
+    SPI_Init();
+    SSD_init();
+    
+    //example use of gfx API
+    SSD_GFX_loadSmallBitmap(ant_8x8,8,8,0,0);
+    SSD_GFX_loadSmallBitmap(sig_strenght_lvl4_8x8,8,8,8,0);
+
+    while(1)
+    {
+        //some stuff
+        if(timer100ms_flag == 1)
+        {	
+            //update OLED GRAM
+	    SSD_updateBuffer(SSD_GFX_returnBufferPointer());
+        }
+    }
 }
 ```
 
