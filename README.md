@@ -5,26 +5,31 @@
 ### 1.Library for 1.3" SSD1306 OLED display. Developed on STM32F103C8T6 microcontroller. It can be easily ported on any other type of microcontroller. 
 
 ### 2. FIle structure description
-####2.1. GPIO
+
+#### 2.1. GPIO
+
 |FOLDER|SUBFOLDER|FILES	|Description
 |------|--------|-------|--------------------------------------------------------------------
 |GPIO  |	| pins.h | contains #defines with pin numbers (PA0 - 0, PA1 - 1 etc).
 |GPIO  |        | gpio.h | header file with listed API for controling GPIOs
 |GPIO  |        | gpio.c | source file that contains functions that can be used to control GPIOS
 
-####2.2. SPI
+#### 2.2. SPI
+
 |FOLDER|SUBFOLDER|FILES	|Description
 |------|--------|-------|--------------------------------------------------------------------
 |SPI   |        | spi.h  | header file with listed very simple API for controling SPI1(only transmission in master mode)    	
 |SPI     |	| spi.c  | source file that contains functions for SPI1 interface (transmission only (one data pin) in master mode.
 
-####2.3. SPI1 DMA
+#### 2.3. SPI1 DMA
+
 |FOLDER|SUBFOLDER|FILES	|Description
 |------|--------|-------|--------------------------------------------------------------------
 |SPI1_DMA |	|spi1_dma.c| file contains code for using DMA1 channel 3 for SPI transimsion
 |SPI1_DMA|	|spi1_dma.h | listed API for DMA1 Ch3 SPI transmision mode.	
 
-####2.4. OLED
+#### 2.4. OLED
+
 |FOLDER|SUBFOLDER|FILES	|Description
 |------|--------|-------|--------------------------------------------------------------------
 |OLED	|icons  |icons.h 	|this file contains few 8x8pixels icons for OLED display
@@ -37,7 +42,8 @@
 |OLED	|src	|ssd1306_gfx.c	|file contains API for drawing grpahics		
 |OLED	|src	|ssd1306_print.c |file contains API for printing
 
-####2.5. Src and main.c
+#### 2.5. Src and main.c
+
 |FOLDER|SUBFOLDER|FILES	|Description
 |------|--------|-------|--------------------------------------------------------------------
 |src	|	|main.c | example of how to use OLED api	
