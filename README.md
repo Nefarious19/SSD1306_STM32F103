@@ -51,10 +51,10 @@
 ### 3. How to use this library
 
 As It was written, this library was developed on STM32F103C8T6 uC. Hardware configuration was as below:
-	- 1.3" OLED display with SH1106 (similar to SSD1306) controller. Oled is configured in SPI mode.
-	- STM32F103C8T6 configured as SPI master with only one data line (3 wire SPI)
-	- DMA1 channel 3 is used for updating internal OLED GRAM data for every 100ms. That means that all
-	graphics and printing stuff is done on internal uC RAM and then transferred to OLED display.
+* 1.3" OLED display with SH1106 (similar to SSD1306) controller. Oled is configured in SPI mode.
+* STM32F103C8T6 configured as SPI master with only one data line (3 wire SPI)
+* DMA1 channel 3 is used for updating internal OLED GRAM data for every 100ms. That means that all 
+graphics and printing stuff is done on internal uC RAM and then transferred to OLED display.
 
 >NOTICE!
 >
